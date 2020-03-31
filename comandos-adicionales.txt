@@ -1,0 +1,75 @@
+﻿ionic cordova build ios --prod --buildFlag="-UseModernBuildSystem=0"
+
+
+ionic cordova platform rm ios
+ionic cordova platform rm ios
+ionic cordova add ios
+
+
+// Seleccionar el team
+
+
+ionic cordova build ios --prod
+
+
+
+
+ng g m pages/pages --flat // generar el modulo pages en la carpeta pages --flat en la misma carpeta, sin carpeta hija
+
+
+--dry -run // muestra lo que va a hacer pero no lo lanza (luego lo quitamos y lanzamos el comando)
+
+
+ionic g // presenta todas las cosas que podemos generar
+ionic g page pages/inicio 
+
+
+
+
+-------------------------------
+IONIC DevApp (App Store) → Para probar las aplicaciones en el dispositivo de pruebas
+(no es compatible con todos los plugins de cordova)
+
+
+ionic serve -c
+
+
+abrimos el devapp en el dispositivo y debe aparecer en el dispositivo
+
+
+ionic cordova run --list (para ver los dispositivos físicos o virtuales que tenemos)
+ionic cordova run android --target=Pixel_2_XL_API_28_-_PIE -l (para correrlo en el dispositivo en concreto [el -l es para el livereloader])
+
+
+(para debuguear en el dispositivo)
+Herramientas de desarrollo de Google > … > Remote devices > seleccionamos el dispositivo > inspeccionar
+
+
+---------------------
+sudo npm install -g ios-deploy --unsafe-perm=true
+
+
+ionic cordova run --list
+
+
+ionic cordova emulate ios --debug --target "iPhone-XXXXXX" 
+
+
+
+
+ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
+
+
+ionic cordova emulate ios -- --buildFlag="-UseModernBuildSystem=0"
+
+
+ionic cordova run ios -- --buildFlag="-UseModernBuildSystem=0" -l
+
+
+ionic cordova run ios (con el teléfono conectado y desbloqueado, levanta la app en el iphone real sin pasar por XCode. Si tenemos problemas en este comando, probar con las otras variantes)
+
+
+Podemos depurarlo desde Safari > Develop > Dispositivo > localhosts
+
+
+------------------------------
